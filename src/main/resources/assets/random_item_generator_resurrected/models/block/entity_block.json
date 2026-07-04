@@ -1,0 +1,6 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "random_item_generator_resurrected:block/entity_block"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OEO",
+    "NSN",
+    "OEO"
+  ],
+  "key": {
+    "O": { "item": "minecraft:obsidian" },
+    "E": { "item": "minecraft:egg" },
+    "N": { "item": "minecraft:nether_star" },
+    "S": { "item": "minecraft:spawner" }
+  },
+  "result": {
+    "id": "random_item_generator_resurrected:entity_block",
+    "count": 1
+  }
+}

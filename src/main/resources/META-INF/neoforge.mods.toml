@@ -1,0 +1,46 @@
+modLoader="javafml"
+loaderVersion="2"
+license='''
+This mod, "Random Item Generator Resurrected," is the proprietary property of DarklyStudios. All rights reserved.
+
+You may:
+- Use this mod for personal, non-commercial purposes.
+
+You may not:
+- Copy, modify, distribute, or create derivative works based on this mod.
+- Upload this mod to any website or platform without explicit permission from the author.
+- Use this mod for commercial purposes.
+
+Any unauthorized use of this mod is strictly prohibited and may result in legal action.
+
+For permissions, contact DKLYNTLY at DarklyStudios@outlook.com
+'''
+
+issueTrackerURL="https://discord.com/invite/vwmd55YYEW"
+
+[[mods]]
+modId="random_item_generator_resurrected"
+version="2.1.5"
+displayName="Random Item Generator Resurrected"
+logoFile="rigmod_resurrected.png"
+credits="inspiration from mitat original creator of rigmod"
+authors="dklyntly"
+description='''
+This mod adds "Random Item Generator" block. Every time you mine this block it will drop a random item. If you mine with a silk touch pickaxe it will drop itself. If you break with a fortune pickaxe it can drop multiple items at once.
+
+check out my other projects: https://legacy.curseforge.com/members/darklynightly/projects
+'''
+
+[[dependencies.random_item_generator_resurrected]]
+modId="neoforge"
+type="required"
+versionRange="2"
+ordering="NONE"
+side="BOTH"
+
+[[dependencies.random_item_generator_resurrected]]
+modId="minecraft"
+type="required"
+versionRange="[1.21.1,1.22)"
+ordering="NONE"
+side="BOTH"

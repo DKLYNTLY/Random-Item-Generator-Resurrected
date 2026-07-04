@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "LBL",
+    "BDB",
+    "LBL"
+  ],
+  "key": {
+    "L": { "item": "minecraft:lapis_lazuli" },
+    "B": { "item": "minecraft:book" },
+    "D": { "item": "minecraft:enchanting_table" }
+  },
+  "result": {
+    "id": "random_item_generator_resurrected:enchants_block",
+    "count": 1
+  }
+}
