@@ -1,0 +1,12 @@
+{
+  "criteria": {
+    "unlock": {
+      "trigger": "minecraft:tick"
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "random_item_generator_resurrected:entity_block"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "block.random_item_generator_resurrected.item_block": "Random Item Block",
+  "block.random_item_generator_resurrected.entity_block": "Random Entity Block",
+  "block.random_item_generator_resurrected.enchants_block": "Random Enchants Block",
+  "block.random_item_generator_resurrected.loot_block": "Random Loot Block",
+
+  "item.random_item_generator_resurrected.item_block": "Random Item Block",
+  "item.random_item_generator_resurrected.entity_block": "Random Entity Block",
+  "item.random_item_generator_resurrected.enchants_block": "Random Enchants Block",
+  "item.random_item_generator_resurrected.loot_block": "Random Loot Block",
+
+  "itemGroup.random_item_generator_resurrected.rig_tab": "Random Item Generator",
+
+  "container.crafting": "Crafting",
+
+  "stat.random_item_generator_resurrected.item_block_uses": "Times Random Item Block Used",
+  "stat.random_item_generator_resurrected.entity_block_uses": "Times Random Entity Block Used",
+  "stat.random_item_generator_resurrected.enchant_block_uses": "Times Random Enchants Block Used",
+  "stat.random_item_generator_resurrected.loot_block_uses": "Times Random Loot Block Used"
+}

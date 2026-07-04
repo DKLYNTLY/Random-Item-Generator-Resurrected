@@ -1,0 +1,93 @@
+---- Minecraft Crash Report ----
+// Surprise! Haha. Well, this is awkward.
+
+Time: 2026-07-01 13:12:17
+Description: Exception in server tick loop
+
+java.lang.NullPointerException: Cannot invoke "net.minecraft.stats.Stat.getType()" because "$$2" is null
+	at net.minecraft.stats.ServerStatsCounter.toJson(ServerStatsCounter.java:145) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.stats.ServerStatsCounter.save(ServerStatsCounter.java:60) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.players.PlayerList.save(PlayerList.java:335) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.client.server.IntegratedPlayerList.save(IntegratedPlayerList.java:29) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.players.PlayerList.saveAll(PlayerList.java:645) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.saveEverything(MinecraftServer.java:531) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:77) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:661) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.20.1-47.4.6_mapped_official_1.20.1.jar%23191!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:840) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.20.1
+	Minecraft Version ID: 1.20.1
+	Operating System: Windows 11 (amd64) version 10.0
+	Java Version: 17.0.16, Eclipse Adoptium
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode, sharing), Eclipse Adoptium
+	Memory: 2291195568 bytes (2185 MiB) / 4211081216 bytes (4016 MiB) up to 16542334976 bytes (15776 MiB)
+	CPUs: 16
+	Processor Vendor: AuthenticAMD
+	Processor Name: AMD Ryzen 7 9800X3D 8-Core Processor           
+	Identifier: AuthenticAMD Family 26 Model 68 Stepping 0
+	Microarchitecture: unknown
+	Frequency (GHz): 4.69
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce RTX 5070 Ti
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x2c05
+	Graphics card #0 versionInfo: DriverVersion=32.0.16.1062
+	Graphics card #1 name: AMD Radeon(TM) Graphics
+	Graphics card #1 vendor: Advanced Micro Devices, Inc. (0x1002)
+	Graphics card #1 VRAM (MB): 2048.00
+	Graphics card #1 deviceId: 0x13c0
+	Graphics card #1 versionInfo: DriverVersion=32.0.21043.12001
+	Memory slot #0 capacity (MB): 32768.00
+	Memory slot #0 clockSpeed (GHz): 6.00
+	Memory slot #0 type: Unknown
+	Memory slot #1 capacity (MB): 32768.00
+	Memory slot #1 clockSpeed (GHz): 6.00
+	Memory slot #1 type: Unknown
+	Virtual memory max (MB): 67059.80
+	Virtual memory used (MB): 23261.45
+	Swap memory total (MB): 3968.00
+	Swap memory used (MB): 0.00
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/358, l='ServerLevel[New World]', x=26.95, y=72.00, z=53.38]]
+	Data Packs: vanilla, mod:forge, mod:random_item_generator_resurrected
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.9+10.0.9+main.dcd20f30
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.5.jar eventbus PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.6.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.6.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.6.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.6.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.20.1-47.4.6.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.9.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.9.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.20.1-47.4.6_mapped_official_1.20.1.jar    |Minecraft                     |minecraft                     |1.20.1              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |47.4.6              |DONE      |Manifest: NOSIGNATURE
+		main                                              |Random Item Generator Resurrec|random_item_generator_resurrec|2.0.1               |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: aef55b03-e753-4379-aed9-6e68fc9e0ee7
+	FML: 47.4
+	Forge: net.minecraftforge:47.4.6

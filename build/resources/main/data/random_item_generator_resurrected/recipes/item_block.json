@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "DGD",
+    "ECE",
+    "DGD"
+  ],
+  "key": {
+    "D": { "item": "minecraft:diamond" },
+    "G": { "item": "minecraft:gold_ingot" },
+    "E": { "item": "minecraft:ender_pearl" },
+    "C": { "item": "minecraft:chest" }
+  },
+  "result": {
+    "id": "random_item_generator_resurrected:item_block",
+    "count": 1
+  }
+}

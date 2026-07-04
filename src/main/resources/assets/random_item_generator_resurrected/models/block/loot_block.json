@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "random_item_generator_resurrected:block/loot_block"
+  }
+}

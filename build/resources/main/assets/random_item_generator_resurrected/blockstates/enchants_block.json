@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": { "model": "random_item_generator_resurrected:block/enchants_block" }
+  }
+}

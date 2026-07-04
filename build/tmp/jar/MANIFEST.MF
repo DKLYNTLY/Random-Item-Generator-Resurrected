@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Specification-Title: random_item_generator_resurrected
+Specification-Vendor: dklyntly
+Specification-Version: 1
+Implementation-Title: untitled
+Implementation-Version: 2.0.1
+Implementation-Vendor: dklyntly
+Implementation-Timestamp: 2026-07-04T17:24:13-0400
+

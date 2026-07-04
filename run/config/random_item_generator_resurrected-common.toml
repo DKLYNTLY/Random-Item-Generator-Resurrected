@@ -1,0 +1,124 @@
+
+#Settings for the Random Item Block — controls which items can drop.
+[item_block]
+	#Set to true to use the whitelist instead of the denylist.
+	#When true, only items in 'allowed_items' or 'allowed_mods' will drop.
+	#When false (default), all items drop except those in 'blocked_items' or 'blocked_mods'.
+	use_whitelist = false
+	#Items that will never drop. Use full IDs like "minecraft:command_block".
+	#Only used when use_whitelist = false.
+	blocked_items = ["minecraft:air"]
+	#Mods whose items will never drop. Use the mod's namespace/ID, e.g. "create".
+	#Only used when use_whitelist = false.
+	blocked_mods = []
+	#Only these items can drop. Use full IDs like "minecraft:diamond".
+	#Only used when use_whitelist = true.
+	allowed_items = []
+	#Only items from these mods can drop. Use the mod's namespace/ID, e.g. "minecraft".
+	#Only used when use_whitelist = true.
+	allowed_mods = []
+
+#Settings for the Random Entity Block — controls which entities can spawn.
+[entity_block]
+
+	#Master toggle — the simplest way to control what spawns.
+	[entity_block.master]
+		#When true (recommended), only actual mobs (animals, monsters, etc.) can spawn.
+		#This blocks everything else: boats, minecarts, projectiles, item frames, etc.
+		#Turn this off if you want to use the fine-grained toggles below.
+		only_allow_mobs = true
+
+	#Hazard toggles — always checked, even when only_allow_mobs is on.
+	[entity_block.hazards]
+		#Block lightning bolts from spawning. Recommended: true.
+		block_lightning = true
+		#Block explosive entities (TNT, TNT Minecart, End Crystal). Recommended: true.
+		block_explosives = true
+		#Block fireball entities (Ghast, Blaze, Wither, Dragon). Recommended: true.
+		block_fireballs = true
+
+	#Fine-grained toggles — only used when only_allow_mobs = false.
+	[entity_block.non_mob_filters]
+		#Block all projectiles (arrows, tridents, etc.) from spawning.
+		block_projectiles = true
+		#Block splash and lingering potions from spawning.
+		block_splash_potions = true
+		#Block experience bottles from spawning.
+		block_xp_bottles = true
+		#Block armor stands from spawning.
+		block_armor_stands = true
+		#Block vehicles (boats, minecarts) from spawning.
+		block_vehicles = true
+		#Block falling block entities from spawning.
+		block_falling_blocks = true
+		#Block item frames and glow item frames from spawning.
+		block_item_frames = true
+		#Block paintings from spawning.
+		block_paintings = false
+
+	#Mob category filters — applies to actual mobs regardless of only_allow_mobs.
+	[entity_block.mob_categories]
+		#Block passive and neutral creatures (cows, pigs, wolves, etc.) from spawning.
+		block_creatures = false
+		#Block hostile monsters (zombies, skeletons, creepers, etc.) from spawning.
+		block_monsters = false
+
+	#Explicit lists — always applied regardless of other settings.
+	[entity_block.lists]
+		#Set to true to use the whitelist instead of the denylist.
+		#When true, only entities in 'allowed_entities' or 'allowed_mods' can spawn.
+		#When false (default), all entities spawn except those in 'blocked_entities' or 'blocked_mods'.
+		use_whitelist = false
+		#Entities that will never spawn, by full ID. e.g. "minecraft:ender_dragon".
+		#Only used when use_whitelist = false.
+		blocked_entities = ["minecraft:ender_dragon", "minecraft:wither", "minecraft:giant"]
+		#Mods whose entities will never spawn. Use the mod's namespace/ID.
+		#Only used when use_whitelist = false.
+		blocked_mods = []
+		#Only these entities can spawn, by full ID. e.g. "minecraft:cow".
+		#Only used when use_whitelist = true.
+		allowed_entities = []
+		#Only entities from these mods can spawn. Use the mod's namespace/ID.
+		#Only used when use_whitelist = true.
+		allowed_mods = []
+
+#Settings for the Random Enchants Block — controls which enchantments can appear.
+[enchants_block]
+	#When true, curse enchantments (Curse of Binding, Curse of Vanishing) will never appear.
+	remove_curses = false
+	#Set to true to use the whitelist instead of the denylist.
+	#When true, only enchantments in 'allowed_enchants' or 'allowed_mods' can appear.
+	#When false (default), all enchantments appear except those in 'blocked_enchants' or 'blocked_mods'.
+	use_whitelist = false
+	#Enchantments that will never appear, by full ID. e.g. "minecraft:mending".
+	#Only used when use_whitelist = false.
+	blocked_enchants = []
+	#Mods whose enchantments will never appear. Use the mod's namespace/ID.
+	#Only used when use_whitelist = false.
+	blocked_mods = []
+	#Only these enchantments can appear, by full ID. e.g. "minecraft:sharpness".
+	#Only used when use_whitelist = true.
+	allowed_enchants = []
+	#Only enchantments from these mods can appear. Use the mod's namespace/ID.
+	#Only used when use_whitelist = true.
+	allowed_mods = []
+
+#Settings for the Random Loot Block — controls which loot tables can be rolled.
+[loot_block]
+	#Set to true to use the whitelist instead of the denylist.
+	#When true, only loot tables in 'allowed_tables' or 'allowed_mods' can be rolled.
+	#When false (default), all loot tables are rolled except those in 'blocked_tables' or 'blocked_mods'.
+	use_whitelist = false
+	#Loot tables that will never be rolled, by full ID. e.g. "minecraft:chests/simple_dungeon".
+	#Only used when use_whitelist = false.
+	blocked_tables = []
+	#Mods whose loot tables will never be rolled. Use the mod's namespace/ID.
+	#Only used when use_whitelist = false.
+	blocked_mods = []
+	#Only these loot tables can be rolled, by full ID. e.g. "minecraft:chests/end_city_treasure".
+	#Only used when use_whitelist = true.
+	allowed_tables = []
+	#Only loot tables from these mods can be rolled. Use the mod's namespace/ID.
+	#Only used when use_whitelist = true.
+	allowed_mods = []
+
