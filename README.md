@@ -26,7 +26,7 @@ Block usage is tracked in the vanilla **Statistics** screen under the **Custom**
 
 ### Showcase
 
-<span><iframe width="800" height="450" src="https://www.youtube.com/embed/4Q3l9kilx3I" frameborder="0" allowfullscreen="allowfullscreen"></iframe></span>
+[![Watch the showcase](https://img.youtube.com/vi/4Q3l9kilx3I/hqdefault.jpg)](https://www.youtube.com/watch?v=4Q3l9kilx3I)
 
 </details>
 
